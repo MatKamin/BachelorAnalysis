@@ -14,6 +14,8 @@ PIPELINE = [
     "03_run_robustness.py",
     "04_run_active_learning.py",
     "05_generate_report.py",
+    "06_run_k_sweep.py",
+    "07_generate_report_ksweep.py",
 ]
 
 

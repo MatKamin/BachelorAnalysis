@@ -17,6 +17,8 @@ python scripts/02_run_benchmark.py
 python scripts/03_run_robustness.py
 python scripts/04_run_active_learning.py
 python scripts/05_generate_report.py
+python scripts/06_run_k_sweep.py
+python scripts/07_generate_report_ksweep.py
 ```
 
 `config.py` steuert Subsampling (`MAX_TRIPS_PER_USER`, `MAX_USERS`),
