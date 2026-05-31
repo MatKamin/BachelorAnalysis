@@ -26,12 +26,22 @@ Window-Parameter, Augmentation-Levels und AL-Budgets. Standard ist eine
 schnelle Subset-Konfiguration; fuer den finalen Lauf `MAX_TRIPS_PER_USER = None`
 setzen.
 
+## K-Sweep
+
+`scripts/06_run_k_sweep.py` wiederholt Benchmark und Robustheit fuer jede
+feste Clusterzahl aus `K_VALUES = [5, 6, 7, 8]` (definiert in `06_run_k_sweep.py`
+bzw. `07_generate_report_ksweep.py`). Pro Wert entsteht ein eigener
+Ergebnisordner `results/k5/`, `results/k6/`, `results/k7/`, `results/k8/`.
+`scripts/07_generate_report_ksweep.py` fasst die k-Werte vergleichend zusammen.
+
 ## Outputs
 
 - `results/features/` - extrahierte Window-Features (Parquet)
 - `results/tables/`   - alle Metriken (CSV)
 - `results/figures/`  - alle Plots (PNG)
 - `results/analysis_report.md` - synthetisierter Bericht
+- `results/k5/` ... `results/k8/` - Tabellen und Plots je Clusterzahl (K-Sweep)
+- `results/analysis_report_ksweep.md` - vergleichender K-Sweep-Bericht
 
 ## Datenquelle
 
